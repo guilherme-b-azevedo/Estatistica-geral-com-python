@@ -34,20 +34,20 @@ Versões: os notebooks foram salvos em 2020 com Python 3.7.1. Em novembro de 202
 
 ## Exemplo
 
-`5 - Teste Z para duas proporções.ipynb` compara duas amostras (A: 122 sucessos em 134; B: 127 em 145), com significância de 10% e hipótese alternativa unilateral à direita. Saída do notebook (trecho):
+`5 - Teste Z para duas proporções.ipynb` compara duas amostras (A: 144 sucessos em 160; B: 130 em 150), com significância de 10% e hipótese alternativa unilateral à direita. Saída do notebook (trecho):
 
 ```
-H0:  0.9104_<=_0.8759
-Ha:  0.9104_>_0.8759
+H0:  0.9_<=_0.8667
+Ha:  0.9_>_0.8667
 
 Alfa:  0.1
 Valor crítico:  1.28
-Estimativa ponderada:  0.8925
+Estimativa ponderada:  0.8839
 
-Estatística de teste:  0.9295
-P valor:  0.176315
+Estatística de teste:  0.9146
+P valor:  0.180201
 
-H0 aceitada, pois P-valor 0.176315 >= Alfa 0.1
+H0 aceitada, pois P-valor 0.180201 >= Alfa 0.1
 ```
 
 ## Situação
