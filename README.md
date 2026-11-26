@@ -1,6 +1,59 @@
-# Estatistica geral com python
- Dedicado a estudo de teoria de estatística geral e prática de resolução de problemas de estatística utilizando python, ambos organizados na ferramenta Jupyter Notebook. Sendo apresentado primeiramente a teoria, seguida dos exercícios e códigos aplicados.
- 
-Para seu melhor proveito, faça download dos arquivos .ipynb, abra com o Jupyter Notebook, e altere os dados nos códigos já escritos para a resolução dos seu próprios problemas a serem resolvidos nos seus estudos, baseados nas teorias apresentadas anteriormente aos códigos.
+# Estatística geral com Python
 
-## Bons estudos!
+Notebooks Jupyter de estudo de estatística geral: em cada tema, primeiro a teoria (em Markdown, com fórmulas em LaTeX), depois exemplos e exercícios resolvidos em Python. Os cálculos usam NumPy e SciPy, e os gráficos e diagramas são gerados com Matplotlib; os testes de hipóteses foram escritos à mão (tabelas Z e t-Student, região crítica, valor-p e intervalo de confiança), sem bibliotecas prontas de testes.
+
+Todo o conteúdo está em português.
+
+## Conteúdo
+
+| Notebook | Temas |
+|---|---|
+| `1 - Estatística básica.ipynb` | Distribuição de frequência, medidas de tendência central, medidas de dispersão, escore Z, quantis, quartis, intervalo interquartil e outliers |
+| `2 - Probabilidade.ipynb` | Axiomas, probabilidade condicional, teorema de Bayes, variáveis aleatórias discretas e contínuas, distribuições binomial, Poisson, exponencial e normal, com exercícios |
+| `3 - Estimação de parâmetros estatísticos.ipynb` | Estimativa pontual e intervalar, intervalos de confiança para a média (σ conhecido e desconhecido) e para a proporção, tamanho da amostra |
+| `4 - Testes de hipóteses.ipynb` | Hipóteses nula e alternativa, tipos de erro, região crítica, valor-p, teste z e teste t para uma média, teste para uma proporção |
+| `5 - Teste Z para duas proporções.ipynb` | Comparação de duas proporções com teste Z |
+| `6 - Teste T para duas médias.ipynb` | Teste F para duas variâncias; teste t para duas médias independentes (variâncias iguais e desiguais) e para amostras pareadas |
+
+## Como executar
+
+Requisitos: Python 3, NumPy, SciPy, Matplotlib e Jupyter. Os notebooks não leem arquivos externos; os dados de cada exercício estão no próprio código.
+
+```bash
+git clone https://github.com/guilherme-b-azevedo/Estatistica-geral-com-python.git
+cd Estatistica-geral-com-python
+python -m venv .venv
+# Windows: .venv\Scripts\activate    Linux/macOS: source .venv/bin/activate
+pip install numpy scipy matplotlib notebook
+jupyter notebook
+```
+
+Execute as células de cada notebook em ordem, de cima para baixo: as funções auxiliares (busca nas tabelas Z e t, tipo de região crítica, desenho dos gráficos) são definidas em células anteriores aos exemplos. Para resolver um problema seu, altere as variáveis do enunciado na célula do exemplo e execute de novo.
+
+Versões: os notebooks foram salvos em 2020 com Python 3.7.1. Em novembro de 2026, o código das células rodou com Python 3.14, NumPy 2.4 e SciPy 1.17 (executado fora do Jupyter), e as células de gráficos e de consulta às tabelas acrescentadas nessa revisão foram executadas num kernel Jupyter com Python 3.12, NumPy 2.5, SciPy 1.18 e Matplotlib 3.11.
+
+## Exemplo
+
+`5 - Teste Z para duas proporções.ipynb` compara duas amostras (A: 122 sucessos em 134; B: 127 em 145), com significância de 10% e hipótese alternativa unilateral à direita. Saída do notebook (trecho):
+
+```
+H0:  0.9104_<=_0.8759
+Ha:  0.9104_>_0.8759
+
+Alfa:  0.1
+Valor crítico:  1.28
+Estimativa ponderada:  0.8925
+
+Estatística de teste:  0.9295
+P valor:  0.176315
+
+H0 aceitada, pois P-valor 0.176315 >= Alfa 0.1
+```
+
+## Situação
+
+Projeto de estudo e portfólio, de 2020. Não está em desenvolvimento ativo.
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE).
