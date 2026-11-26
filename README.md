@@ -1,6 +1,6 @@
 # Estatística geral com Python
 
-Notebooks Jupyter de estudo de estatística geral: em cada tema, primeiro a teoria (em Markdown, com fórmulas em LaTeX), depois exemplos e exercícios resolvidos em Python. Os cálculos usam NumPy e SciPy, e os gráficos e diagramas são gerados com Matplotlib; os testes de hipóteses foram escritos à mão (tabelas Z e t-Student, região crítica, valor-p e intervalo de confiança), sem bibliotecas prontas de testes.
+Notebooks Jupyter de estudo de estatística geral: em cada tema, primeiro a teoria (em Markdown, com fórmulas em LaTeX), depois exemplos e exercícios resolvidos em Python. Os cálculos usam NumPy e SciPy, e os gráficos e diagramas são gerados com Matplotlib. Os testes de hipóteses dos notebooks 4 e 5 foram escritos à mão (tabelas Z e t-Student, região crítica, valor-p e intervalo de confiança); no notebook 6, o teste F usa os valores críticos de `scipy.stats.f`, e os testes t para duas médias usam as funções prontas `scipy.stats.ttest_ind_from_stats` e `scipy.stats.ttest_rel`.
 
 Todo o conteúdo está em português.
 
